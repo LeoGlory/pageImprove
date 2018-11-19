@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-table.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-table.js"></script>
+    <script type="text/javascript" src="js/bootstrap-table-zh-CN.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class='container-fluid'>
+        <h2 class='page-header'>授信方案（默认综合授信）</h2>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="javaScript:void(0)">完成授信方案</a></li>
+        </ul>
+        <h2 class='page-header'></h2>
+
+        <div class='tabbable tabs-left'>
+          <ul class='nav nav-tabs'>
+            <li class='active'><a href='#tab1' data-toggle='tab'>基本信息</a></li>
+            <li><a href='#tab2' data-toggle='tab'>额度分配信息</a></li>
+            <li><a href='#tab3' data-toggle='tab'>占用他项额度信息</a></li>
+            <li><a href='#tab4' data-toggle='tab'>风险定价</a></li>
+            <li><a href='#tab5' data-toggle='tab'>经营主负责人</a></li>
+          </ul>
+          
+          <div class='tab-content'>
+            <div class='tab-pane active' id='tab1'>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">是否敞口：</label>
+                    <div class="col-sm-6">
+                        <select class="form-control">
+                                <option value="">请选择</option>
+                                <option value="Y">是</option>
+                                <option value="N">否</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">是否占用他项额度：</label>
+                        <div class="col-sm-6">
+                            <select class="form-control">
+                                    <option value="">请选择</option>
+                                    <option value="Y">是</option>
+                                    <option value="N">否</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+            <div class='tab-pane' id='tab2'>
+                <table data-toggle="table" data-url="data1.json">
+                    <thead>
+                        <tr>
+                            <th data-field="id">创建人</th>
+                            <th data-field="date">创建日期</th>
+                            <th data-field="bank">创建人所属分行</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class='tab-pane' id='tab3'>占用他项额度信息的内容</div>
+            <div class='tab-pane' id='tab4'>风险定价的内容</div>
+            <div class='tab-pane' id='tab5'>经营主负责人的内容</div>
+          </div> 
+        </div>
+          
+      </div>
+</body>
+</html>
