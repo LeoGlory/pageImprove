@@ -16,7 +16,7 @@
     <div class='container-fluid'>
         <h2 class='page-header'>授信方案（默认综合授信）</h2>
         <ul class="nav nav-pills">
-            <li class="active"><a href="javaScript:void(0)">完成授信方案</a></li>
+            <button type="button" class="btn btn-primary">完成授信方案</button>
         </ul>
         <h2 class='page-header'></h2>
 
@@ -53,22 +53,18 @@
                     </div>
             </div>
             <div class='tab-pane' id='tab2'>
-                <table data-toggle="table" data-url="data1.json">
-                    <thead>
-                        <tr>
-                            <th data-field="id">创建人</th>
-                            <th data-field="date">创建日期</th>
-                            <th data-field="bank">创建人所属分行</th>
-                        </tr>
-                    </thead>
-                </table>
+                <ul class="nav nav-pills">
+                    <button type="button" class="btn btn-primary" id="add1">新增</button>
+                    <button type="button" class="btn btn-primary" id="reduce1">删除</button>
+                </ul>
+                <table id="table1"></table>
             </div>
             <div class='tab-pane' id='tab3'>占用他项额度信息的内容</div>
             <div class='tab-pane' id='tab4'>风险定价的内容</div>
             <div class='tab-pane' id='tab5'>经营主负责人的内容</div>
           </div> 
         </div>
-          
       </div>
 </body>
+<script type="text/javascript" src="js/utils/page.js"></script>
 </html>
